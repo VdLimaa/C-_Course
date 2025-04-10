@@ -1,0 +1,111 @@
+// Aula 1 - Variáveis e tipos de dados
+
+// Tipos de dados
+
+// Para Char usar aspas simples
+Console.WriteLine('b');
+
+// Int Literal
+Console.WriteLine(123);
+
+// Float Type    Precision
+// ----------------------------
+// float         ~6-9 digits
+// double        ~15-17 digits
+// decimal        28-29 digits
+
+// Float
+Console.WriteLine(0.25F);
+
+// Double vem padrão do próprio Csharp
+Console.WriteLine(2.625);
+
+// Decimal
+Console.WriteLine(12.39816m);
+
+// Bool
+Console.WriteLine(true);
+Console.WriteLine(false);
+
+// isso são coisas diferentes
+Console.WriteLine("123");
+Console.WriteLine(123);
+
+Console.WriteLine("true");
+Console.WriteLine(true);
+
+// string para palavras, frases ou qualquer dado alfanumérico para apresentação, não cálculo
+// char para um caractere alfanumérico
+// int para um número inteiro
+// decimal para um número com um componente fracionário
+// bool para um valor true/false
+
+// Variáveis
+
+string primeiroNome;
+
+// Regras de nome de variáveis:
+
+// Os nomes de variáveis podem conter caracteres alfanuméricos e o caractere de sublinhado. Caracteres especiais como o símbolo de hash # (também conhecido como símbolo de número ou símbolo da libra) ou o símbolo do dólar $ não são permitidos.
+// Os nomes de variáveis precisam começar com uma letra alfabética ou um sublinhado, não um número.
+// Os nomes de variáveis diferenciam maiúsculas de minúsculas, o que significa que string Value; e string value; são duas variáveis diferentes.
+// Nomes de variáveis não podem ser uma palavra-chave do C#. Por exemplo, você não pode usar as seguintes declarações de variável: decimal decimal; ou string string;.
+
+// Boas Práticas:
+
+// Os nomes de variáveis devem usar minúsculas concatenadas, que é um estilo de escrita que usa uma letra minúscula no início da primeira palavra e uma letra maiúscula no início de cada palavra subsequente. Por exemplo, string thisIsCamelCase;.
+// Os nomes de variáveis devem sempre começar com uma letra alfabética. Os desenvolvedores usam o sublinhado para uma finalidade especial, portanto, tente não usá-lo por enquanto.
+// Os nomes de variáveis devem ser descritivos e sugestivos, no contexto do aplicativo. Escolha um nome para a variável que represente o tipo de dados que ela manterá.
+// Os nomes de variáveis devem ser uma ou mais palavras inteiras unidas. Não use contrações ou abreviações, pois o nome da variável (e, consequentemente, a finalidade dela) pode não ficar claro para terceiros que lerem o seu código.
+// Nomes de variável não devem incluir o tipo de dados da variável. Você poderá ser aconselhado a usar um estilo como string strValue;. Esse conselho não é mais atual.
+
+// Exemplos:
+
+char letra;
+
+int placar;
+
+decimal saldo;
+
+bool ligado;
+
+// Exercício:
+
+// Declarar uma variável, atribuirá um valor a ela, recuperará seu valor.
+
+string Pokemon;
+Pokemon = "Porygon";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+Pokemon = "Cacturne";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+Pokemon = "Infernape";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+Pokemon = "Sharpedo";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+Pokemon = "Electivire";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+Pokemon = "Golurk";
+Console.WriteLine($"{Pokemon} Eu escolho você!");
+
+// Você precisa atribuir (definir) um valor a uma variável para recuperar (obter) um valor de uma variável.
+// Você pode inicializar uma variável atribuindo um valor a ela no ponto de declaração.
+// A atribuição ocorre da direita para a esquerda.
+// Use um único caractere de igual como o operador de atribuição.
+// Para recuperar o valor da variável, você simplesmente usa o nome da variável.
+
+// Declarar variáveis locais de tipo implícito:
+
+var message = "I'M STEVE";
+
+// A palavra-chave var informa ao compilador para inferir o tipo de dados da variável com base no valor para o qual ele é inicializado.
+// Você provavelmente verá a palavra-chave var enquanto lê o código de outras pessoas. No entanto, você deve usar o tipo de dados quando possível.
+
+// Desafio:
+
+// Armazene os seguintes valores em variáveis: Bob, 3 e 34.4. Essas variáveis devem receber nomes que reflitam sua finalidade. Selecione o tipo de dado correto para cada uma com base no valor que irá armazenar. Por fim, combine as variáveis com strings literais usando comandos Console.Write() para formar a mensagem completa: "Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius." O código deve produzir essa saída exata.
+
+string name = "Bob";
+int mensagem = 3;
+double temperature = 34.4;
+
+Console.WriteLine($"Hello, {name}! You have {mensagem} messages in your inbox. The temperature is {temperature} celsius");
